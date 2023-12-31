@@ -1,0 +1,25 @@
+test Ok1 [[ 
+module crm
+
+entity Customer
+    id : String
+    name : String
+    description : String
+    website : String
+    media_fk -> List[Media]
+    key(id)
+end
+entity Contact
+    id : String
+    name : String
+    phone : String
+    email : String
+    customer -> Customer
+    key(id)
+end
+entity Media
+    id : String
+    media_link : String
+    key(id)
+end
+]]

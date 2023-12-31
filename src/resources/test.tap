@@ -1,0 +1,10 @@
+module crm
+
+entity Customer
+    id : String
+    name : String
+    description : String
+    website : String
+    media_fk -> List[Media]
+    key(id)
+end

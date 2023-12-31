@@ -1,0 +1,10 @@
+test Ok1 [[
+CREATE TABLE IF NOT EXISTS Customer(
+    id STRING,
+    name STRING,
+    description STRING,
+    website STRING,
+    media_fk STRING
+)
+STORED AS PARQUET;
+]]
